@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Get You Fit</title>
 </head>
 
 <body>
-    <div class="row min-vh-100 no-gutters">
+    <div class="row min-vh-100 no-gutters" id="search-box">
         <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
-          <h1 class="text-center">
+          <h1 class="text-center" >
             <span class="oi oi-task d-inline d-lg-none"></span>
              Get You Fit!
           </h1>
@@ -39,6 +39,17 @@
             </div>
           </div>
         </main>
+    </div>
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags" list="languages">
+        <datalist id="languages">
+            <option>ActionScript</option>
+            <option>AppleScript</option>
+            <option>Asp</option>
+            <option>BASIC</option>
+            <option>C</option>
+        </datalist>
     </div>
     <div>2</div>
     <div>3</div>

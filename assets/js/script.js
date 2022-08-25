@@ -45,6 +45,30 @@ $.ajax(options).done(function (response) {
 	console.log(response);
 });
 
+var baseurl = "https://github.com/MLanfear/get-you-fit.git"
+function loadOptions() {
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", baseurl + "/all",true);
+	xmlhttp.onreadystatechange = function() {
+		if(xmlhttp.readyState ===4 && xmlhttp.status ===200) {
+			var options = JSON.parse(xmlhttp.responseText);
+			var tbltop = "<table>";
+					
+			
+
+			var main ="";
+			for (i = 0; i <options.length; i++) {
+				main += "<tr><td>"+options[i].id+"</td></tr>"+options[i].title+"</td></tr>"+options[i].image+"</td></tr>"+options[i].calories+"</td></tr>";
+			}
+			var tblbottom = "</table>"
+			var tbl = tbltop + main + tblbottom;
+			document.getElementById("search-box").innerhtml = tbl;
+		}
+	};
+	xmlhttp.send();
+}
+
+
 const ingredients = {
 	"async": true,
 	"crossDomain": true,
