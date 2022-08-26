@@ -27,53 +27,29 @@
                 <button type="button" class="btn btn-primary" type="submit" id="form-submit"><i class="fas fa-search">
                     <p> Search</p></i></button>
             </form>
-            <div class="ui-widget">
-                <label for="tags">Tags: </label>
-                <input id="tags" list="languages">
-                <datalist id="languages">
-                    <option>Chicken</option>
-                    <option>Beef</option>
-                    <option>Pork</option>
-                    <option>Noodles</option>
-                    <option>Vegetarian</option>
-                    <option>Vegan</option>
-                    <option>Soups</option>
-                    <option>Appetizers</option>
-                </datalist>
-            </div>
             <span class="oi oi-task display-1 text-center mb-2 d-none d-lg-block mt-auto"></span>
-            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-                excepturi aut non
-                laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
-            </p>
         </div>
     </div>
     <div class="row">
         <div class="col text-left">
-            <a href="#" id="viewHighScore">View High Scores</a>
+            <a href="#" id="viewNewRecipes">View New Recipes</a>
         </div>
-        <div id="timer" class="col text-right">
-            <i class="far fa-clock"></i> Time: <span id="timeLeft">0</span>
-        </div>
-        <div id="timesUp" class="col text-right" style="display: none;">Time's Up!</div>
     </div>
             
-    <div id="everything" class="row text-center">
+    <div id="everything" class="row text-top">
         <div class="col-md-2"></div>
             <main class="col-md-8 mt-5">
                 <!--start screen  -->
-                <div id="start" class="m-2 justify-content-center">
-                    <h1 class="font-weight-bold pl-5 pr-5">Recipe Search Results</h1>
+                <div id="start" class="m-2 justify-content-right">
+                    <h1 class="font-weight-bold pl-5 pr-5"></h1>
                     <p class="p-5"></p>
-                    <button type="button" id="start-quiz-button" class="btn btn-info ml-5 align-center">Start Quiz</button>
                 </div>        
-                <div class="m-5 row justify-content-around">
+                <div class="m-5 row justify-content-center">
                 <h2 class="bg-dark text-light">Search Results
                 </h2>
-                <ul id="search-results" class="list-group">
+                <ul id="searchresults" class="list-group">
                     <li class="list-group-item">
-                    <span class="badge badge-primary badge-pill">!!MARKER</span>
-                    <p class="m-1">Search Results</p>
+                    <p class="m-1">!</p>
                     </li>
                 </ul>
             </main>
@@ -86,7 +62,6 @@
             <p id="temp"></p>
             <p id="humidity"></p>
             <p id="wind"></p>
-            <p id="uv-index">UV Index: <span class="color"></span></p>
         </section>
 
         <section class="mt-2 mb-2" id="five-day" style="display:none;">
