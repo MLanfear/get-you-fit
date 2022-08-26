@@ -1,4 +1,4 @@
-//$(document).ready(function () {
+$(document).ready(function () {
 
 
 	function getRecipeAPI () {
@@ -9,7 +9,17 @@
 		
 			}).then(function(reponse){
 				console.log(response);
+			
+			
 			})
+
+			$(".card-deck").empty();
+
+			var icon = response.recipe[0].icon;
+			var iconImg = $("<img>");
+			iconImg.addClass("img-fluid");
+			iconImg.attr("src")
+			$("title").append(iconImg);
 	}
 
 
@@ -44,5 +54,5 @@
 		}
 	});
 
-//});
+});
 window.$ = jQuery
