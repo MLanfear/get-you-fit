@@ -1,16 +1,16 @@
 //$(document).ready(function () {
 
 
-	// function getRecipeAPI () {
-	//	var queryURL2 = "https://api.api-ninjas.com/v1/recipe?query=" + "+x5KWFt82vHMdy+BPrBIbw==VMmRfElnZsH4wS9Q";
-	//	$.ajax({
-	//		url:queryURL2,
-	//		method: "GET"
-	//	
-	//		}).then(function(reponse){
-	//			console.log(response);
-	//		})
-	//	}
+	function getRecipeAPI () {
+		var queryURL2 = "https://api.api-ninjas.com/v1/recipe?query=" + "+x5KWFt82vHMdy+BPrBIbw==VMmRfElnZsH4wS9Q";
+		$.ajax({
+			url:queryURL2,
+			method: "GET"
+		
+			}).then(function(reponse){
+				console.log(response);
+			})
+	}
 
 
 
