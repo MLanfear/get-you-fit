@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>$(document).ready(function() {
-        $('div').fadeIn('slow');
-    });</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Get You Fit</title>
 </head>
 
-<header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
+<header class="col-6 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
     <h1>
         Get You Fit!
     </h1>
 </header>
 <body>
     <div class="container-fluid">
-        <div class="row min-vh-100 no-gutters" id="search-box">
+        <div class="row justify-content-left" id="search-box">
             <form class="form-inline" id="ingredient-form">
                 <input class="form-control sm-2" id="ingredient-input" type="search" aria-label="Search">
                 <button type="button" class="btn btn-primary" type="submit" id="form-submit"><i class="fas fa-search">
@@ -36,18 +32,14 @@
         </div>
     </div>
             
-    <div id="everything" class="row text-top">
+    <div id="everything" class="row justify-content-top">
         <div class="col-md-2"></div>
             <main class="col-md-8 mt-5">
-                <!--start screen  -->
-                <div id="start" class="m-2 justify-content-right">
-                    <h1 class="font-weight-bold pl-5 pr-5"></h1>
-                    <p class="p-5"></p>
-                </div>        
-                <div class="m-5 row justify-content-center">
                 <h2 class="bg-dark text-light">Search Results
                 </h2>
-                <ul id="searchresults" class="list-group">
+                <!--start screen  -->     
+                <div class="m-5 row justify-content-top">
+                <ul id="search-results" class="list-group">
                     <li class="list-group-item">
                     <p class="m-1">!</p>
                     </li>
@@ -71,6 +63,8 @@
             </div>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
