@@ -28,7 +28,8 @@ var createMeal = meal => {
 		}
 	}
 }
-var Food_chicken = {
+
+var Food_beef = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
@@ -36,12 +37,64 @@ var Food_chicken = {
 	}
 };
 
-fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=chicken&query=beef&query=vegan', Food_chicken)
+fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=beef', Food_beef)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-
-    var Workout = {
+var Food_chicken = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
+            'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=chicken', Food_chicken)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+var Food_vegan = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
+                'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
+            }
+        };
+        
+        fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=vegan', Food_vegan)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));    
+        
+            var Food_pork = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
+                    'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
+                }
+            };
+            
+            fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=pork', Food_pork)
+                .then(response => response.json())
+                .then(response => console.log(response))
+                .catch(err => console.error(err));    
+                var Food_tofu = {
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
+                        'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
+                    }
+                };
+                
+                fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=tofu', Food_tofu)
+                    .then(response => response.json())
+                    .then(response => console.log(response))
+                    .catch(err => console.error(err));
+        
+        
+        
+        
+            var Workout = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
