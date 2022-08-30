@@ -1,3 +1,4 @@
+
 header {
     text-align: center;
     border-style: ridge;
@@ -50,6 +51,10 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
+    overflow:auto;
+    width: 100%;
+    height: 100%;
+    
 }
 
 html {
@@ -70,24 +75,24 @@ footer {
 }
 
 img {
-    width: 500px;
-    height: 400px;
-    image-rendering: optimizeQuality;
+    width: 400px;
+    height: 350px;
+    margin: 15px;
+    padding: 5px;
+    border-style: double;
+    border-color: red;
+    box-sizing: border-box;
 }
+
 
 .pc1 {
     float: left;
-    margin: 5px;
+    
 
 }
 
 .pc2 {
     float: right;
-    margin: 5px;
-}
-
-section {
-    align-items: center;
 }
 
 .form-control {
@@ -98,6 +103,10 @@ section {
 }
 button {
     margin: 15px;
+}
+
+.form-control {
+    width: 50%;
 }
 
 
