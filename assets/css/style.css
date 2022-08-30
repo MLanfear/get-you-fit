@@ -77,23 +77,22 @@ footer {
 img {
     width: 400px;
     height: 350px;
-    image-rendering: optimizeQuality;
+    margin: 15px;
+    padding: 5px;
+    border-style: double;
+    border-color: red;
+    box-sizing: border-box;
 }
+
 
 .pc1 {
     float: left;
-    margin: 15px;
+    
 
 }
 
 .pc2 {
     float: right;
-    margin: 15px;
-}
-
-.pc3 {
-    float: inline-end;
-    margin: 15px;
 }
 
 .form-control {
