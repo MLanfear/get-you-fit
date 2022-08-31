@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 header {
   text-align: center;
   border-style: ridge;
@@ -120,4 +119,6 @@ button {
 .text-center {
   font-size: 75px;  
 }
+
+
 
