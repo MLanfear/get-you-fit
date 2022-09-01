@@ -22,35 +22,19 @@ const container = document.querySelector('.container-to-put-the-items');
 //searchFormEl.addEventListener("submit", formSubmitHandler);
 //
 ////
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
-=======
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
 var foodRecipe = {
   method: 'GET',
-    headers: {
+  headers: {
     'X-RapidAPI-Key': '15098ea48cmsh2b43d6524135209p13664ejsnd412390146b4',
     'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
   }
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
 var query = recipeInputEl.value;
 fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
 query.appendChild(foodRecipe);
 
 //
-<<<<<<< HEAD
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
-=======
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
 //
 //
 //
@@ -68,29 +52,15 @@ query.appendChild(foodRecipe);
 //  }
 //};
 butnEl.addEventListener('click', () => {
-<<<<<<< HEAD
-<<<<<<< HEAD
   var query = recipeInputEl.value;
   fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
-=======
-  fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query)
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
-=======
-  fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query)
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.error(err));
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 butnEl.appendChild(element)
 
-=======
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
-=======
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
   
 
 //fetch ('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=title')
