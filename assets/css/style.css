@@ -1,46 +1,9 @@
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    text-align: center;
-    border-style: ridge;
-    border: 15px solid black;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: aquamarine;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    height: 300px;
-  }
-
-body {
-    width: 100%;
-    background-color: bisque;
-  }
-
-.card {
-    display: block;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    background-color: blueviolet;
-  }
-
-.list-group-item {
-    width: 100%;
-    height:655px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px bold black;
-    box-sizing: border-box;
-    background-color: bisque;
-  }
-=======
   text-align: center;
   border-style: ridge;
   border: 15px solid black;
@@ -50,52 +13,11 @@ body {
   width: 100%;
   box-sizing: border-box;
   display: block;
-  height: 25%;
-
-
-  
-=======
-  text-align: center;
-  border-style: ridge;
-  border: 15px solid black;
-  padding: 15px;
-  margin-top: 20px;
-  background-color: aquamarine;
-  width: 100%;
-  box-sizing: border-box;
-  display: block;
-  height: 25%;
-
-
-  
+  height: 300px;
 }
 
 body {
-  margin: 0;
-  background-color: bisque;
-}
-
-.card {
-  display: block;
-  align-content: center;
-  justify-content: center;
   width: 100%;
-  background-color: blueviolet;
-}
-
-.list-group-item {
-  width: 100%;
-  height:655px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px bold black;
-  box-sizing: border-box;
-  background-color: bisque;
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
-}
-
-body {
-  margin: 0;
   background-color: bisque;
 }
 
@@ -116,7 +38,6 @@ body {
   box-sizing: border-box;
   background-color: bisque;
 }
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
 
 .list-group {
   width: 100%;
@@ -125,70 +46,20 @@ body {
   background-color: blueviolet;
   box-sizing: border-box;
 
-  }
+}
 
 .container {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    display: block;
-    justify-content: center;
-    align-items: center;
-    overflow:auto;
-    width: 100%;
-    height: 100%;
-    
-  }
-
-html {
-    background-color: bisque;
-  }
-
-footer {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 10px;
-    border-style: double;
-    border-width: 30px;
-    box-sizing: border-box;
-    width: 25%;
-    height: 25%;
-  }
-
-img {
-    width: 400px;
-    height: 350px;
-    margin: 15px;
-    padding: 5px;
-    border-style: double;
-    border-color: red;
-    box-sizing: border-box;
-  }
-=======
   display: block;
   justify-content: center;
   align-items: center;
   overflow:auto;
   width: 100%;
   height: 100%;
-  
-=======
-  display: block;
-  justify-content: center;
-  align-items: center;
-  overflow:auto;
-  width: 100%;
-  height: 100%;
-  
 }
 
 html {
   background-color: bisque;
-  width: 100vw;
-  height: 100vh;
-
-}
+  }
 
 footer {
   display: block;
@@ -204,38 +75,7 @@ footer {
 }
 
 img {
-  width: 450px;
-  height: 350px;
-  margin: 15px;
-  padding: 5px;
-  border-style: double;
-  border-color: red;
-  box-sizing: border-box;
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
-}
-
-html {
-  background-color: bisque;
-  width: 100vw;
-  height: 100vh;
-
-}
-
-footer {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  padding: 10px;
-  border-style: double;
-  border-width: 30px;
-  box-sizing: border-box;
-  width: 25%;
-  height: 25%;
-}
-
-img {
-  width: 450px;
+  width: 400px;
   height: 350px;
   margin: 15px;
   padding: 5px;
@@ -243,48 +83,17 @@ img {
   border-color: red;
   box-sizing: border-box;
 }
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
-
+  
 
 .pc1 {
   float: left;
-  
-
-  }
+}
 
 .pc2 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    float: right;
-  }
+  float: right;
+}
 
 .form-control {
-    margin: auto;
-    padding: 15px;
-    border: 4px solid black;
-    width: 90%;
-  }
-button {
-    margin: 15px;
-  }
-=======
-  float: right;
-=======
-  float: right;
-}
-
-.input {
-  margin: auto;
-  padding: 15px;
-  border: 4px solid black;
-  width: 90%;
-}
-button {
-  margin: 15px;
->>>>>>> 146bd809ffdee12dd15ffacede4b335639d63855
-}
-
-.input {
   margin: auto;
   padding: 15px;
   border: 4px solid black;
@@ -293,10 +102,12 @@ button {
 button {
   margin: 15px;
 }
->>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
 
-.form-control {
-  width: 50%;
+.input {
+margin: auto;
+padding: 15px;
+border: 4px solid black;
+width: 90%;
 }
 
 .text-center {
