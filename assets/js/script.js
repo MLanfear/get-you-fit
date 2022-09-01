@@ -29,11 +29,6 @@ var foodRecipe = {
     'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
   }
 };
-
-var query = recipeInputEl.value;
-fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
-query.appendChild(foodRecipe);
-
 //
 //
 //
