@@ -1,108 +1,118 @@
-const search_recipe_btn = document.getElementById("search_recipes");
-const meal_container = document.getElementById("meal")
+const recipeInputEl = document.getElementById("meal");
+const butnEl = document.getElementById("search_recipes");
 
 
-search_recipe_btn.addEventListener('click', () => {
-	fetch('https://www.themealdb.com/api/json/v1/1/random.php')
-		.then(res => res.json())
-		.then(res => {
-			createMeal(res.meals[0]);
-		})
-		.catch(e => {
-			console.warn(e);
-		});
-});
+const element = document.createElement('li');
 
-var createMeal = meal => {
-	const ingredients = [];
 
-	// Get all ingredients from the object. Up to 20
-	for (let i = 1; i <= 20; i++) {
-		if (meal[`strIngredient${i}`]) {
-			ingredients.push(
-				`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
-			);
-		} else {
-			// Stop if there are no more ingredients
-			break;
-		}
-	}
-}
+element.textContent = recipeInputEl
+//element.appendChild(recipeInputEl);
 
-var Food_beef = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-		'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
-	}
+const container = document.querySelector('.container-to-put-the-items');
+//container.appendChild(element);
+//const searchFormEl = document.querySelector("#search-form");
+//const recipeInputEl = document.querySelector("#recipe-input");
+//
+//
+//var formSubmitHandler = function(event) {
+//  event.preventDefault();
+//  console.log(event);
+//}
+//
+//searchFormEl.addEventListener("submit", formSubmitHandler);
+//
+////
+var foodRecipe = {
+  method: 'GET',
+    headers: {
+    'X-RapidAPI-Key': '15098ea48cmsh2b43d6524135209p13664ejsnd412390146b4',
+    'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
+  }
 };
 
-fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=beef', Food_beef)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-var Food_chicken = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-            'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
-        }
-    };
-    
-    fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=chicken', Food_chicken)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-var Food_vegan = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-                'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
-            }
-        };
-        
-        fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=vegan', Food_vegan)
-            .then(response => response.json())
-            .then(response => console.log(response))
-            .catch(err => console.error(err));    
-        
-            var Food_pork = {
-                method: 'GET',
-                headers: {
-                    'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-                    'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
-                }
-            };
-            
-            fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=pork', Food_pork)
-                .then(response => response.json())
-                .then(response => console.log(response))
-                .catch(err => console.error(err));    
-                var Food_tofu = {
-                    method: 'GET',
-                    headers: {
-                        'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-                        'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
-                    }
-                };
-                
-                fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=tofu', Food_tofu)
-                    .then(response => response.json())
-                    .then(response => console.log(response))
-                    .catch(err => console.error(err));
-        
-        
-        
-        
-            var Workout = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '5ed11fb8cfmsh44a3a48e404d3fbp11502cjsn56f496b4d96a',
-            'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
-        }
-    };
-    
-    fetch('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?muscle=biceps', Workout)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
+var query = recipeInputEl.value;
+fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
+query.appendChild(foodRecipe);
+
+//
+//
+//
+//
+//
+//
+//
+//
+//var getTitleName = function() {
+//  var queryString = document.location.search;
+//  var titleName = queryString.split("=")[1];
+//  if (titleName) {
+//    repoNameEl.textContent = titleName;
+//  } else {
+//    document.location.replace('./index.html');
+//  }
+//};
+butnEl.addEventListener('click', () => {
+  fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+});
+
+  
+
+//fetch ('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=title')
+//  .then(function() {
+//  })
+//  .catch(function() {
+//  });
+
+
+
+
+
+
+// butn.querySelector(".meal").appendChild(paragraph);
+//
+//const li = document.querySelector("div.card input[list-group-item]");
+//
+//
+//  
+//
+//        
+//        
+//        
+//        
+//const Workout = {
+//    method: 'GET',
+//    headers: {
+//      'X-RapidAPI-Key': '15098ea48cmsh2b43d6524135209p13664ejsnd412390146b4',
+//      'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
+//      }
+//};
+//    
+//
+//butn.addEventListener('click', function() {
+//  fetch('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?', Workout) 
+//  .then(response => response.json())
+//  .then(response => console.log(response))
+//  .catch(err => console.error(err));
+//});
+//
+//async function postData(url = '', data = {}) {
+//  const response = await fetch(url, {
+//    method: 'POST',
+//    mode: 'cors',
+//    cache: 'no-cache',
+//    credentials: 'same-origin',
+//    headers: {
+//      'Content-Type': 'application/json'
+//    },
+//    redirect: 'follow',
+//    referrerPolicy: 'no-referrer',
+//    body: JSON.stringify(data)
+//  });
+//}
+//
+
+
+
