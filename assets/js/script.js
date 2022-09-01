@@ -22,7 +22,10 @@ const container = document.querySelector('.container-to-put-the-items');
 //searchFormEl.addEventListener("submit", formSubmitHandler);
 //
 ////
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
 var foodRecipe = {
   method: 'GET',
     headers: {
@@ -31,6 +34,14 @@ var foodRecipe = {
   }
 };
 
+<<<<<<< HEAD
+=======
+var query = recipeInputEl.value;
+fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
+query.appendChild(foodRecipe);
+
+//
+>>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
 //
 //
 //
@@ -48,15 +59,22 @@ var foodRecipe = {
 //  }
 //};
 butnEl.addEventListener('click', () => {
+<<<<<<< HEAD
   var query = recipeInputEl.value;
   fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query, foodRecipe)
+=======
+  fetch('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=' + query)
+>>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.error(err));
 });
 
+<<<<<<< HEAD
 butnEl.appendChild(element)
 
+=======
+>>>>>>> 3f05a07f6cdd32654872fd784264b785ec2b4566
   
 
 //fetch ('https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=title')
